@@ -10,3 +10,17 @@ const getRandEvent = () => {
         return 'Pentathlon';
     }
 };
+
+// Days to train
+const getTrainingDays = event => {
+    let days = 0;
+    if (event === 'Marathon') {
+        days = 50;
+    } else if (event === 'Triathlon') {
+        days = 100;
+    } else if (event === 'Pentathlon') {
+        days = 200;
+    }
+
+    return days;
+};
